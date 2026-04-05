@@ -98,7 +98,7 @@ export default function Home() {
       <main>
         <section className="relative isolate overflow-hidden border-b border-white/10">
           <img
-            src="/hero.jpg"
+            src="/hero.png"
             alt="MHZ construction hero"
             className="absolute inset-0 h-full w-full object-cover opacity-30"
           />
@@ -154,7 +154,7 @@ export default function Home() {
           <div className="grid gap-6 md:grid-cols-3">
             <div className="overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.03]">
               <img
-                src="/hero.jpg"
+                src="/hero.png"
                 alt="Interior finishing"
                 className="h-72 w-full object-cover"
               />
@@ -167,7 +167,7 @@ export default function Home() {
 
             <div className="overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.03]">
               <img
-                src="/service-plumbing.jpg"
+                src="/service-plumbing.png"
                 alt="Plumbing systems"
                 className="h-72 w-full object-cover"
               />
@@ -180,7 +180,7 @@ export default function Home() {
 
             <div className="overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.03]">
               <img
-                src="/service-electrical.jpg"
+                src="/service-electrical.png"
                 alt="Electrical coordination"
                 className="h-72 w-full object-cover"
               />
@@ -340,7 +340,7 @@ export default function Home() {
           <div className="grid gap-6 md:grid-cols-3">
             <div className="overflow-hidden rounded-[30px] border border-white/10 bg-white/[0.03]">
               <img
-                src="/hero.jpg"
+                src="/hero.png"
                 alt="Interior project"
                 className="h-72 w-full object-cover"
               />
@@ -355,7 +355,7 @@ export default function Home() {
 
             <div className="overflow-hidden rounded-[30px] border border-white/10 bg-white/[0.03]">
               <img
-                src="/service-plumbing.jpg"
+                src="/service-plumbing.png"
                 alt="Mechanical room"
                 className="h-72 w-full object-cover"
               />
@@ -370,7 +370,7 @@ export default function Home() {
 
             <div className="overflow-hidden rounded-[30px] border border-white/10 bg-white/[0.03]">
               <img
-                src="/service-electrical.jpg"
+                src="/service-electrical.png"
                 alt="Electrical conduit work"
                 className="h-72 w-full object-cover"
               />
