@@ -51,14 +51,6 @@ export default function Home() {
     "One Coordinated Team",
   ];
 
-  const safeImage = (fallback = "/logo.png") => ({
-    onError: (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
-      const target = e.currentTarget;
-      if (target.src.endsWith(fallback)) return;
-      target.src = fallback;
-    },
-  });
-
   return (
     <div className="min-h-screen bg-[#0B0B0B] text-white">
       <header className="sticky top-0 z-50 border-b border-white/10 bg-black/90 backdrop-blur">
@@ -68,7 +60,6 @@ export default function Home() {
               src="/logo.png"
               alt="MHZ logo"
               className="h-12 w-12 rounded-md border border-white/10 object-cover md:h-14 md:w-14"
-              {...safeImage()}
             />
             <div className="min-w-0">
               <div className="truncate text-sm font-semibold tracking-wide md:text-base">
@@ -113,7 +104,6 @@ export default function Home() {
             src="/hero.png"
             alt="MHZ construction hero"
             className="absolute inset-0 h-full w-full object-cover opacity-30"
-            {...safeImage()}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black/40" />
 
@@ -170,7 +160,6 @@ export default function Home() {
                 src="/hero.png"
                 alt="Interior finishing"
                 className="h-56 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
-                {...safeImage()}
               />
               <div className="p-6">
                 <div className="text-sm uppercase tracking-[0.25em] text-[#D4AF37]">
@@ -184,7 +173,6 @@ export default function Home() {
                 src="/service-plumbing.png"
                 alt="Plumbing systems"
                 className="h-56 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
-                {...safeImage()}
               />
               <div className="p-6">
                 <div className="text-sm uppercase tracking-[0.25em] text-[#D4AF37]">
@@ -198,7 +186,6 @@ export default function Home() {
                 src="/service-electrical.png"
                 alt="Electrical coordination"
                 className="h-56 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
-                {...safeImage()}
               />
               <div className="p-6">
                 <div className="text-sm uppercase tracking-[0.25em] text-[#D4AF37]">
@@ -430,7 +417,6 @@ export default function Home() {
                 src="/hero.png"
                 alt="Interior project"
                 className="h-56 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
-                {...safeImage()}
               />
               <div className="p-6">
                 <h3 className="text-2xl font-semibold">Interior Finishing</h3>
@@ -446,7 +432,6 @@ export default function Home() {
                 src="/service-plumbing.png"
                 alt="Mechanical room"
                 className="h-56 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
-                {...safeImage()}
               />
               <div className="p-6">
                 <h3 className="text-2xl font-semibold">Plumbing Coordination</h3>
@@ -462,7 +447,6 @@ export default function Home() {
                 src="/service-electrical.png"
                 alt="Electrical conduit work"
                 className="h-56 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
-                {...safeImage()}
               />
               <div className="p-6">
                 <h3 className="text-2xl font-semibold">
