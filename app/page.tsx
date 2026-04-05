@@ -1,73 +1,508 @@
 export default function Home() {
+  const residentialServices = [
+    {
+      title: "Bathroom Remodeling & Renovation",
+      description:
+        "Full design-and-build support including custom showers, vanities, tile work, plumbing updates, and clean finish coordination.",
+    },
+    {
+      title: "Kitchen Renovations",
+      description:
+        "Functional kitchen upgrades with cabinetry, countertops, lighting, and finish coordination for daily use.",
+    },
+    {
+      title: "Basement Finishing",
+      description:
+        "Convert underused basement space into clean, code-conscious living or utility zones.",
+    },
+    {
+      title: "Exterior Improvements",
+      description:
+        "Durability-focused exterior updates, repairs, and finishing work for long-term value.",
+    },
+  ];
+
+  const commercialServices = [
+    {
+      title: "Office Renovations & Build-Outs",
+      description:
+        "Turn empty or outdated spaces into modern, functional work environments.",
+    },
+    {
+      title: "Retail & Client-Facing Spaces",
+      description:
+        "Design-conscious build programs focused on brand presentation and customer flow.",
+    },
+    {
+      title: "Multi-Trade Coordination",
+      description:
+        "Coordinated scheduling and execution across trade scopes to reduce downtime.",
+    },
+    {
+      title: "Lifecycle Upgrades",
+      description:
+        "Practical upgrades for operational durability, safety, and long-term maintenance value.",
+    },
+  ];
+
+  const trustPoints = [
+    "Clean Interior Finishing",
+    "Plumbing + Mechanical Coordination",
+    "One Coordinated Team",
+  ];
+
   return (
-    <div className="min-h-screen bg-black text-white">
-      <div className="max-w-6xl mx-auto px-6 py-16">
-
-        <h1 className="text-5xl font-bold mb-6">
-          MHZ Construction Group
-        </h1>
-
-        <p className="text-lg text-gray-300 mb-10">
-          Professional residential and commercial construction services.
-          Clean work. Reliable team. Strong results.
-        </p>
-
-        <div className="grid md:grid-cols-3 gap-6 mb-16">
-          <div className="p-6 bg-white/10 rounded-xl">
-            <h2 className="text-xl font-semibold mb-2">Renovations</h2>
-            <p>Kitchen, bathroom, basement upgrades done right.</p>
+    <div className="min-h-screen bg-[#0B0B0B] text-white">
+      <header className="sticky top-0 z-50 border-b border-white/10 bg-black/90 backdrop-blur">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+          <div className="flex items-center gap-3">
+            <img
+              src="/logo.png"
+              alt="MHZ logo"
+              className="h-14 w-14 rounded-md object-cover border border-white/10"
+            />
+            <div>
+              <div className="text-base font-semibold tracking-wide">
+                MHZ Construction Group
+              </div>
+              <div className="text-xs uppercase tracking-[0.25em] text-stone-400">
+                Reliable People. Remarkable Spaces.
+              </div>
+            </div>
           </div>
 
-          <div className="p-6 bg-white/10 rounded-xl">
-            <h2 className="text-xl font-semibold mb-2">Commercial</h2>
-            <p>Professional build-outs and business spaces.</p>
-          </div>
+          <nav className="hidden items-center gap-6 text-sm text-stone-300 md:flex">
+            <a href="#about" className="hover:text-white">
+              About
+            </a>
+            <a href="#services" className="hover:text-white">
+              Services
+            </a>
+            <a href="#projects" className="hover:text-white">
+              Projects
+            </a>
+            <a href="#quote" className="hover:text-white">
+              Contact
+            </a>
+          </nav>
 
-          <div className="p-6 bg-white/10 rounded-xl">
-            <h2 className="text-xl font-semibold mb-2">Exterior</h2>
-            <p>Durable exterior work and finishing.</p>
-          </div>
-        </div>
-
-        <div className="bg-white text-black p-8 rounded-xl max-w-xl">
-          <h2 className="text-2xl font-bold mb-4">Request a Quote</h2>
-
-          <form
-            action="https://formsubmit.co/nlqp@hotmail.ca"
-            method="POST"
-            className="flex flex-col gap-4"
+          <a
+            href="#quote"
+            className="rounded-xl border border-[#D4AF37] bg-[#D4AF37]/10 px-4 py-2 text-sm font-semibold text-[#D4AF37] transition hover:bg-[#D4AF37] hover:text-black"
           >
-            <input type="hidden" name="_captcha" value="false" />
-
-            <input
-              name="name"
-              placeholder="Full Name"
-              required
-              className="p-3 border rounded"
-            />
-
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              required
-              className="p-3 border rounded"
-            />
-
-            <textarea
-              name="message"
-              placeholder="Project details..."
-              required
-              className="p-3 border rounded"
-            />
-
-            <button className="bg-black text-white py-3 rounded">
-              Send Request
-            </button>
-          </form>
+            Start My Quote
+          </a>
         </div>
+      </header>
 
-      </div>
+      <main>
+        <section className="relative isolate overflow-hidden border-b border-white/10">
+          <img
+            src="/hero.jpg"
+            alt="MHZ construction hero"
+            className="absolute inset-0 h-full w-full object-cover opacity-30"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black/40" />
+
+          <div className="relative mx-auto grid max-w-7xl gap-10 px-6 py-20 md:grid-cols-[1.1fr_0.9fr] md:py-28">
+            <div>
+              <div className="mb-4 inline-flex rounded-full border border-[#D4AF37]/40 bg-[#D4AF37]/10 px-4 py-1 text-xs uppercase tracking-[0.3em] text-[#D4AF37]">
+                Residential &amp; Commercial Construction
+              </div>
+
+              <h1 className="max-w-4xl text-5xl font-bold leading-tight md:text-7xl">
+                Built Right.
+                <br />
+                <span className="text-[#D4AF37]">No Shortcuts.</span>
+              </h1>
+
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-stone-300">
+                Precision-built residential and commercial construction with
+                direct communication from first call to final walkthrough.
+              </p>
+
+              <div className="mt-8 flex flex-wrap gap-4">
+                <a
+                  href="#quote"
+                  className="rounded-xl bg-[#D4AF37] px-6 py-3 font-semibold text-black transition hover:opacity-90"
+                >
+                  Get My Quote
+                </a>
+                <a
+                  href="tel:5149288466"
+                  className="rounded-xl border border-[#D4AF37] px-6 py-3 font-semibold text-[#D4AF37] transition hover:bg-[#D4AF37] hover:text-black"
+                >
+                  Call The Team
+                </a>
+              </div>
+            </div>
+
+            <div className="grid gap-4 self-end">
+              {trustPoints.map((item) => (
+                <div
+                  key={item}
+                  className="rounded-2xl border border-white/10 bg-black/40 px-5 py-5 text-center text-sm font-medium uppercase tracking-[0.2em] text-stone-200 shadow-xl backdrop-blur"
+                >
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-7xl px-6 py-16">
+          <div className="grid gap-6 md:grid-cols-3">
+            <div className="overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.03]">
+              <img
+                src="/hero.jpg"
+                alt="Interior finishing"
+                className="h-72 w-full object-cover"
+              />
+              <div className="p-6">
+                <div className="text-sm uppercase tracking-[0.25em] text-[#D4AF37]">
+                  Interiors With Intent
+                </div>
+              </div>
+            </div>
+
+            <div className="overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.03]">
+              <img
+                src="/service-plumbing.jpg"
+                alt="Plumbing systems"
+                className="h-72 w-full object-cover"
+              />
+              <div className="p-6">
+                <div className="text-sm uppercase tracking-[0.25em] text-[#D4AF37]">
+                  Plumbing Systems
+                </div>
+              </div>
+            </div>
+
+            <div className="overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.03]">
+              <img
+                src="/service-electrical.jpg"
+                alt="Electrical coordination"
+                className="h-72 w-full object-cover"
+              />
+              <div className="p-6">
+                <div className="text-sm uppercase tracking-[0.25em] text-[#D4AF37]">
+                  Electrical Coordination
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-7xl px-6 py-6 md:py-8">
+          <div className="rounded-[32px] border border-[#D4AF37]/20 bg-gradient-to-br from-white/5 via-white/[0.03] to-[#D4AF37]/5 p-8 md:p-12">
+            <div className="mb-4 text-sm uppercase tracking-[0.3em] text-stone-400">
+              Start With A Clear Plan
+            </div>
+            <h2 className="max-w-4xl text-3xl font-semibold leading-tight md:text-5xl">
+              Simple process. Direct communication. No wasted steps.
+            </h2>
+
+            <div className="mt-8 grid gap-4 md:grid-cols-3">
+              {[
+                "Residential and commercial project support.",
+                "Scope-first consultations based on your priorities.",
+                "One team from estimate through completion.",
+              ].map((item) => (
+                <div
+                  key={item}
+                  className="rounded-2xl bg-black/60 p-6 text-xl leading-9 text-stone-100 ring-1 ring-white/5"
+                >
+                  {item}
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-8 flex flex-wrap gap-4">
+              <a
+                href="tel:5149288466"
+                className="rounded-xl bg-slate-700/70 px-6 py-4 text-center font-bold uppercase tracking-[0.16em] text-white transition hover:bg-slate-600/70"
+              >
+                Call The Team
+              </a>
+              <a
+                href="#quote"
+                className="rounded-xl border border-[#D4AF37] px-6 py-4 text-center font-bold uppercase tracking-[0.16em] text-[#D4AF37] transition hover:bg-[#D4AF37] hover:text-black"
+              >
+                Start My Quote
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" className="mx-auto max-w-7xl px-6 py-16 md:py-24">
+          <div className="grid gap-10 md:grid-cols-[0.9fr_1.1fr]">
+            <div>
+              <div className="text-sm uppercase tracking-[0.3em] text-[#D4AF37]">
+                About Us
+              </div>
+              <h2 className="mt-4 text-4xl font-semibold leading-tight text-[#D4AF37] md:text-6xl">
+                At MHZ, construction is planning, discipline, and craft under
+                pressure.
+              </h2>
+            </div>
+
+            <div className="space-y-6 text-lg leading-9 text-stone-300">
+              <p>
+                We deliver residential and commercial projects through clear
+                scopes, direct communication, and execution detail that holds up
+                long after handoff.
+              </p>
+              <p>
+                From early estimates to final walkthrough, one accountable team
+                stays aligned with your goals, timeline, and standards.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="services" className="mx-auto max-w-7xl px-6 py-16 md:py-24">
+          <div className="grid gap-10 lg:grid-cols-2">
+            <div className="rounded-[32px] border border-[#D4AF37]/20 bg-white/[0.03] p-8 md:p-10">
+              <div className="text-sm uppercase tracking-[0.3em] text-[#D4AF37]">
+                Residential Services
+              </div>
+              <h2 className="mt-4 text-4xl font-semibold text-[#D4AF37] md:text-6xl">
+                Homes planned around your daily life, goals, and long-term
+                value.
+              </h2>
+
+              <div className="mt-6 rounded-2xl bg-black/60 p-6">
+                <div className="text-2xl font-semibold text-[#D4AF37]">
+                  Friendly faces, flawless service.
+                </div>
+                <div className="mt-2 text-xl text-stone-300">
+                  Because home should always feel right.
+                </div>
+              </div>
+
+              <div className="mt-8 space-y-6">
+                {residentialServices.map((service) => (
+                  <div key={service.title}>
+                    <h3 className="text-2xl font-bold uppercase text-stone-100">
+                      {service.title}
+                    </h3>
+                    <div className="mt-3 rounded-2xl bg-black/60 p-6 text-xl leading-9 text-stone-300">
+                      {service.description}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="rounded-[32px] border border-[#D4AF37]/20 bg-white/[0.03] p-8 md:p-10">
+              <div className="text-sm uppercase tracking-[0.3em] text-[#D4AF37]">
+                Commercial Services
+              </div>
+              <h2 className="mt-4 text-4xl font-semibold text-[#D4AF37] md:text-6xl">
+                Operationally aware build programs for business-critical spaces.
+              </h2>
+
+              <div className="mt-6 rounded-2xl bg-black/60 p-6">
+                <div className="text-2xl font-semibold text-[#D4AF37]">
+                  Excellence you can count on.
+                </div>
+                <div className="mt-2 text-xl text-stone-300">
+                  We mean business about your business.
+                </div>
+              </div>
+
+              <div className="mt-8 space-y-6">
+                {commercialServices.map((service) => (
+                  <div key={service.title}>
+                    <h3 className="text-2xl font-bold uppercase text-stone-100">
+                      {service.title}
+                    </h3>
+                    <div className="mt-3 rounded-2xl bg-black/60 p-6 text-xl leading-9 text-stone-300">
+                      {service.description}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" className="mx-auto max-w-7xl px-6 py-16 md:py-24">
+          <div className="mb-8">
+            <div className="text-sm uppercase tracking-[0.3em] text-stone-400">
+              Portfolio
+            </div>
+            <h2 className="mt-3 text-4xl font-semibold text-[#D4AF37] md:text-6xl">
+              Real work. Real detail. Real coordination.
+            </h2>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-3">
+            <div className="overflow-hidden rounded-[30px] border border-white/10 bg-white/[0.03]">
+              <img
+                src="/hero.jpg"
+                alt="Interior project"
+                className="h-72 w-full object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-2xl font-semibold">Interior Finishing</h3>
+                <p className="mt-4 text-lg leading-8 text-stone-300">
+                  Clean modern interior construction with strong finish quality
+                  and premium visual impact.
+                </p>
+              </div>
+            </div>
+
+            <div className="overflow-hidden rounded-[30px] border border-white/10 bg-white/[0.03]">
+              <img
+                src="/service-plumbing.jpg"
+                alt="Mechanical room"
+                className="h-72 w-full object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-2xl font-semibold">Plumbing Coordination</h3>
+                <p className="mt-4 text-lg leading-8 text-stone-300">
+                  Mechanical and plumbing execution focused on precision,
+                  durability, and clean integration.
+                </p>
+              </div>
+            </div>
+
+            <div className="overflow-hidden rounded-[30px] border border-white/10 bg-white/[0.03]">
+              <img
+                src="/service-electrical.jpg"
+                alt="Electrical conduit work"
+                className="h-72 w-full object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-2xl font-semibold">
+                  Electrical & Conduit Work
+                </h3>
+                <p className="mt-4 text-lg leading-8 text-stone-300">
+                  Organized runs, clean routing, and field execution built for
+                  long-term performance.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="quote" className="mx-auto max-w-7xl px-6 py-16 md:py-24">
+          <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+            <div>
+              <div className="text-sm uppercase tracking-[0.3em] text-[#D4AF37]">
+                Get A Quote
+              </div>
+              <h2 className="mt-3 text-4xl font-semibold md:text-6xl">
+                Start the conversation with a stronger first impression.
+              </h2>
+              <p className="mt-6 text-lg leading-8 text-stone-300">
+                Tell us about your project and we’ll get back to you with the
+                right next steps.
+              </p>
+
+              <div className="mt-8 flex flex-wrap gap-4">
+                <a
+                  href="tel:5149288466"
+                  className="rounded-xl border border-white/15 px-6 py-4 text-lg font-bold uppercase tracking-[0.14em] text-white transition hover:bg-white/5"
+                >
+                  Call Now
+                </a>
+                <a
+                  href="mailto:mhzconstructiongroup@gmail.com"
+                  className="rounded-xl border border-[#D4AF37] px-6 py-4 text-lg font-bold uppercase tracking-[0.14em] text-[#D4AF37] transition hover:bg-[#D4AF37] hover:text-black"
+                >
+                  Email Us
+                </a>
+              </div>
+            </div>
+
+            <div className="rounded-[32px] bg-white p-8 text-black shadow-2xl md:p-10">
+              <h3 className="text-3xl font-bold">Request a Quote</h3>
+
+              <form
+                action="https://formsubmit.co/nlqp@hotmail.ca"
+                method="POST"
+                className="mt-6 grid gap-4"
+              >
+                <input type="hidden" name="_captcha" value="false" />
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="New Quote Request - MHZ Website"
+                />
+
+                <input
+                  name="name"
+                  placeholder="Full Name"
+                  required
+                  className="rounded-xl border border-stone-300 px-4 py-3"
+                />
+                <input
+                  name="phone"
+                  placeholder="Phone Number"
+                  className="rounded-xl border border-stone-300 px-4 py-3"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                  className="rounded-xl border border-stone-300 px-4 py-3"
+                />
+                <select
+                  name="project_type"
+                  className="rounded-xl border border-stone-300 px-4 py-3"
+                  defaultValue=""
+                >
+                  <option value="" disabled>
+                    Select Project Type
+                  </option>
+                  <option>Residential Quote</option>
+                  <option>Commercial Quote</option>
+                  <option>Renovation Quote</option>
+                </select>
+                <textarea
+                  name="message"
+                  rows={6}
+                  placeholder="Tell us about your project..."
+                  required
+                  className="rounded-xl border border-stone-300 px-4 py-3"
+                />
+                <button
+                  type="submit"
+                  className="rounded-xl bg-black px-6 py-4 text-lg font-bold uppercase tracking-[0.14em] text-white"
+                >
+                  Send Request
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer className="border-t border-white/10 bg-black px-6 py-10">
+        <div className="mx-auto grid max-w-7xl gap-6 md:grid-cols-3">
+          <div>
+            <div className="text-xl font-semibold">MHZ Construction Group</div>
+            <div className="mt-2 text-stone-400">
+              Reliable People. Remarkable Spaces.
+            </div>
+          </div>
+
+          <div className="text-stone-300">
+            <div>mhzconstructiongroup@gmail.com</div>
+            <div className="mt-2">514-928-8466</div>
+          </div>
+
+          <div className="text-stone-400">
+            <div>Montreal, Quebec</div>
+            <div className="mt-2">
+              Residential and commercial construction
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
