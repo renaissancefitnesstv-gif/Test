@@ -280,54 +280,62 @@ export default function Home() {
           <div className="grid gap-8 md:grid-cols-3">
             <div className="overflow-hidden rounded-[30px] border border-white/10 bg-white/[0.03] transition duration-300 hover:-translate-y-1 hover:border-[#D4AF37]/40 hover:shadow-[0_20px_60px_rgba(212,175,55,0.18)]">
               <img
-                src="/Alex.jpeg"
-                alt="Alex"
+                src="/Xavier Manhertz.jpeg"
+                alt="Xavier Manhertz"
                 className="h-[420px] w-full object-cover object-top"
               />
               <div className="p-6">
-                <h3 className="text-2xl font-semibold text-white">Alex</h3>
+                <h3 className="text-2xl font-semibold text-white">
+                  Xavier Manhertz
+                </h3>
                 <p className="mt-2 text-sm uppercase tracking-[0.2em] text-[#9BB7E8]">
-                  Project Leadership
+                  Founder &amp; Chief Executive Officer
                 </p>
                 <p className="mt-4 text-lg leading-8 text-stone-300">
-                  Focused on coordination, execution quality, and keeping
-                  projects aligned from scope to completion.
+                  Sets the line and the pace for MHZ with years of experience in
+                  both residential and commercial work, leading with precision,
+                  reliability, and pride in the finished result.
                 </p>
               </div>
             </div>
 
             <div className="overflow-hidden rounded-[30px] border border-white/10 bg-white/[0.03] transition duration-300 hover:-translate-y-1 hover:border-[#D4AF37]/40 hover:shadow-[0_20px_60px_rgba(212,175,55,0.18)]">
               <img
-                src="/Jonas.jpeg"
-                alt="Jonas"
+                src="/Jonas Manhertz.jpeg"
+                alt="Jonas Manhertz"
                 className="h-[420px] w-full object-cover object-top"
               />
               <div className="p-6">
-                <h3 className="text-2xl font-semibold text-white">Jonas</h3>
+                <h3 className="text-2xl font-semibold text-white">
+                  Jonas Manhertz
+                </h3>
                 <p className="mt-2 text-sm uppercase tracking-[0.2em] text-[#9BB7E8]">
-                  Commercial Operations
+                  Director of Commercial Operations
                 </p>
                 <p className="mt-4 text-lg leading-8 text-stone-300">
-                  Supports commercial project flow, planning, and day-to-day
-                  delivery with a strong attention to detail.
+                  Leads the commercial side with careful planning, project
+                  coordination, and a strong focus on quality, consistency, and
+                  smooth delivery from scope to handoff.
                 </p>
               </div>
             </div>
 
             <div className="overflow-hidden rounded-[30px] border border-white/10 bg-white/[0.03] transition duration-300 hover:-translate-y-1 hover:border-[#D4AF37]/40 hover:shadow-[0_20px_60px_rgba(212,175,55,0.18)]">
               <img
-                src="/Verne.jpeg"
-                alt="Verne"
+                src="/Philip Deangelis.jpeg"
+                alt="Philip Deangelis"
                 className="h-[420px] w-full object-cover object-top"
               />
               <div className="p-6">
-                <h3 className="text-2xl font-semibold text-white">Verne</h3>
+                <h3 className="text-2xl font-semibold text-white">
+                  Philip Deangelis
+                </h3>
                 <p className="mt-2 text-sm uppercase tracking-[0.2em] text-[#9BB7E8]">
-                  Field Execution
+                  Project Manager
                 </p>
                 <p className="mt-4 text-lg leading-8 text-stone-300">
-                  Brings hands-on site presence and practical execution support
-                  that helps keep the work moving cleanly.
+                  Keeps crews, trades, and execution aligned in the field so
+                  projects move cleanly, stay organized, and finish strong.
                 </p>
               </div>
             </div>
