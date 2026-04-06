@@ -72,11 +72,21 @@ export default function Home() {
           </div>
 
           <nav className="hidden items-center gap-6 text-sm text-stone-300 md:flex">
-            <a href="#about" className="hover:text-white">About</a>
-            <a href="#team" className="hover:text-white">Team</a>
-            <a href="#services" className="hover:text-white">Services</a>
-            <a href="#projects" className="hover:text-white">Projects</a>
-            <a href="#quote" className="hover:text-white">Contact</a>
+            <a href="#about" className="hover:text-white">
+              About
+            </a>
+            <a href="#team" className="hover:text-white">
+              Team
+            </a>
+            <a href="#services" className="hover:text-white">
+              Services
+            </a>
+            <a href="#projects" className="hover:text-white">
+              Projects
+            </a>
+            <a href="#quote" className="hover:text-white">
+              Contact
+            </a>
           </nav>
 
           <a
@@ -160,7 +170,7 @@ export default function Home() {
 
             <div className="group overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.03] transition duration-300 hover:-translate-y-1 hover:border-[#D4AF37]/40 hover:shadow-[0_20px_60px_rgba(212,175,55,0.18)]">
               <img
-                src="/Plumbing.png"
+                src="/service-plumbing.png"
                 alt="Plumbing systems"
                 className="h-56 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
               />
@@ -227,7 +237,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="about" className="mx-auto max-w-7xl px-4 py-12 md:px-6 md:py-24">
+        <section
+          id="about"
+          className="mx-auto max-w-7xl px-4 py-12 md:px-6 md:py-24"
+        >
           <div className="grid gap-10 md:grid-cols-[0.9fr_1.1fr]">
             <div>
               <div className="text-sm uppercase tracking-[0.3em] text-[#D4AF37]">
@@ -253,7 +266,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="team" className="mx-auto max-w-7xl px-4 py-12 md:px-6 md:py-24">
+        <section
+          id="team"
+          className="mx-auto max-w-7xl px-4 py-12 md:px-6 md:py-24"
+        >
           <div className="mb-10">
             <div className="text-sm uppercase tracking-[0.3em] text-[#D4AF37]">
               Leadership Team
@@ -330,7 +346,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="services" className="mx-auto max-w-7xl px-4 py-12 md:px-6 md:py-24">
+        <section
+          id="services"
+          className="mx-auto max-w-7xl px-4 py-12 md:px-6 md:py-24"
+        >
           <div className="grid gap-10 lg:grid-cols-2">
             <div className="rounded-[32px] border border-[#D4AF37]/20 bg-white/[0.03] p-6 md:p-10">
               <div className="text-sm uppercase tracking-[0.3em] text-[#D4AF37]">
@@ -397,7 +416,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="projects" className="mx-auto max-w-7xl px-4 py-12 md:px-6 md:py-24">
+        <section
+          id="projects"
+          className="mx-auto max-w-7xl px-4 py-12 md:px-6 md:py-24"
+        >
           <div className="mb-8">
             <div className="text-sm uppercase tracking-[0.3em] text-stone-400">
               Portfolio
@@ -412,7 +434,23 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            <div className="group overflow-hidden rounded-[30px] border border-white/10 bg-white/[0.03] transition duration-300 hover:-translate-y-1 hover:border-[#D4AF37]/40 hover:shadow-[0_20px_60px_rgba(212,175,55,0.18)]">
+              <img
+                src="/plumbing-project.jpeg"
+                alt="Plumbing system installation"
+                className="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-80"
+              />
+              <div className="p-6">
+                <h3 className="text-2xl font-semibold">Plumbing Systems</h3>
+                <p className="mt-4 text-lg leading-8 text-stone-300">
+                  Complete bathroom build from the ground up. Full plumbing
+                  system installed with proper drainage routing, structural
+                  prep, and execution built for long-term performance.
+                </p>
+              </div>
+            </div>
+
             <div className="group overflow-hidden rounded-[30px] border border-white/10 bg-white/[0.03] transition duration-300 hover:-translate-y-1 hover:border-[#D4AF37]/40 hover:shadow-[0_20px_60px_rgba(212,175,55,0.18)]">
               <img
                 src="/Interior.png"
@@ -435,7 +473,9 @@ export default function Home() {
                 className="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-80"
               />
               <div className="p-6">
-                                <h3 className="text-2xl font-semibold">Mechanical & Plumbing</h3>
+                <h3 className="text-2xl font-semibold">
+                  Mechanical &amp; Plumbing
+                </h3>
                 <p className="mt-4 text-lg leading-8 text-stone-300">
                   Technical plumbing and mechanical execution focused on clean
                   routing, reliable performance, and long-term durability.
@@ -467,46 +507,82 @@ export default function Home() {
           <div className="rounded-[32px] border border-[#D4AF37]/20 bg-gradient-to-br from-[#D4AF37]/10 via-white/[0.03] to-black p-8 md:p-12">
             <div className="max-w-3xl">
               <div className="text-sm uppercase tracking-[0.3em] text-[#D4AF37]">
-                Contact MHZ Construction Group
+                Get My Quote
               </div>
               <h2 className="mt-4 text-3xl font-semibold text-white md:text-6xl">
                 Let’s talk about your next project.
               </h2>
               <p className="mt-6 text-base leading-8 text-stone-300 md:text-lg">
-                Reach out for residential or commercial construction inquiries.
-                We keep communication direct, clear, and project-focused from
-                the start.
+                Tell us what you need and our team will get back to you.
               </p>
             </div>
 
-            <div className="mt-10 grid gap-6 md:grid-cols-2">
-              <a
-                href="tel:5149288466"
-                className="rounded-2xl border border-white/10 bg-black/50 p-6 transition hover:border-[#D4AF37]/40"
-              >
-                <div className="text-sm uppercase tracking-[0.25em] text-stone-400">
-                  Phone
-                </div>
-                <div className="mt-3 text-2xl font-semibold text-white">
-                  (514) 928-8466
-                </div>
-              </a>
+            <div className="mt-10 grid gap-8 md:grid-cols-2">
+              <form className="space-y-4 rounded-2xl border border-white/10 bg-black/50 p-6">
+                <input
+                  type="text"
+                  placeholder="Full Name"
+                  className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-stone-400"
+                />
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-stone-400"
+                />
+                <input
+                  type="tel"
+                  placeholder="Phone Number"
+                  className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-stone-400"
+                />
+                <textarea
+                  placeholder="Tell us about your project"
+                  rows={5}
+                  className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-stone-400"
+                />
+                <button
+                  type="submit"
+                  className="w-full rounded-xl bg-[#D4AF37] px-6 py-3 font-semibold text-black transition hover:opacity-90"
+                >
+                  Send Request
+                </button>
+              </form>
 
-              <a
-                href="mailto:info@mhzconstructiongroup.com"
-                className="rounded-2xl border border-white/10 bg-black/50 p-6 transition hover:border-[#D4AF37]/40"
-              >
-                <div className="text-sm uppercase tracking-[0.25em] text-stone-400">
-                  Email
-                </div>
-                <div className="mt-3 text-2xl font-semibold text-white break-all">
-                  info@mhzconstructiongroup.com
-                </div>
-              </a>
+              <div className="space-y-6">
+                <a
+                  href="tel:5149288466"
+                  className="block rounded-2xl border border-white/10 bg-black/50 p-6 transition hover:border-[#D4AF37]/40"
+                >
+                  <div className="text-sm uppercase tracking-[0.25em] text-stone-400">
+                    Phone
+                  </div>
+                  <div className="mt-3 text-2xl font-semibold text-white">
+                    (514) 928-8466
+                  </div>
+                </a>
+
+                <a
+                  href="mailto:info@mhzconstructiongroup.com"
+                  className="block rounded-2xl border border-white/10 bg-black/50 p-6 transition hover:border-[#D4AF37]/40"
+                >
+                  <div className="text-sm uppercase tracking-[0.25em] text-stone-400">
+                    Email
+                  </div>
+                  <div className="mt-3 break-all text-2xl font-semibold text-white">
+                    info@mhzconstructiongroup.com
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </section>
       </main>
+
+      <a
+        href="tel:5149288466"
+        className="fixed bottom-6 right-6 rounded-full bg-[#D4AF37] px-5 py-3 font-bold text-black shadow-xl transition hover:scale-105"
+      >
+        Call Now
+      </a>
     </div>
   );
 }
