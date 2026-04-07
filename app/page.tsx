@@ -518,34 +518,49 @@ export default function Home() {
             </div>
 
             <div className="mt-10 grid gap-8 md:grid-cols-2">
-              <form className="space-y-4 rounded-2xl border border-white/10 bg-black/50 p-6">
-                <input
-                  type="text"
-                  placeholder="Full Name"
-                  className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-stone-400"
-                />
-                <input
-                  type="email"
-                  placeholder="Email Address"
-                  className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-stone-400"
-                />
-                <input
-                  type="tel"
-                  placeholder="Phone Number"
-                  className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-stone-400"
-                />
-                <textarea
-                  placeholder="Tell us about your project"
-                  rows={5}
-                  className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-stone-400"
-                />
-                <button
-                  type="submit"
-                  className="w-full rounded-xl bg-[#D4AF37] px-6 py-3 font-semibold text-black transition hover:opacity-90"
-                >
-                  Send Request
-                </button>
-              </form>
+              <form
+  action="https://formspree.io/f/xojprpej"
+  method="POST"
+  className="space-y-4 rounded-2xl border border-white/10 bg-black/50 p-6"
+>
+  <input
+    type="text"
+    name="name"
+    placeholder="Full Name"
+    required
+    className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-stone-400"
+  />
+
+  <input
+    type="email"
+    name="email"
+    placeholder="Email Address"
+    required
+    className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-stone-400"
+  />
+
+  <input
+    type="tel"
+    name="phone"
+    placeholder="Phone Number"
+    className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-stone-400"
+  />
+
+  <textarea
+    name="message"
+    placeholder="Tell us about your project"
+    rows={5}
+    required
+    className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-stone-400"
+  />
+
+  <button
+    type="submit"
+    className="w-full rounded-xl bg-[#D4AF37] px-6 py-3 font-semibold text-black transition hover:opacity-90"
+  >
+    Send Request
+  </button>
+</form>
 
               <div className="space-y-6">
                 <a
@@ -561,7 +576,7 @@ export default function Home() {
                 </a>
 
                 <a
-                  href="mailto:info@mhzconstructiongroup.com"
+                  href="mailto:info@mhzconstructiongroup.com?subject=Project Inquiry&body=Full Name:%0D%0APhone:%0D%0AProject Details:"
                   className="block rounded-2xl border border-white/10 bg-black/50 p-6 transition hover:border-[#D4AF37]/40"
                 >
                   <div className="text-sm uppercase tracking-[0.25em] text-stone-400">
