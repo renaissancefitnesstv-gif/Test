@@ -518,17 +518,19 @@ export default function Home() {
             </div>
 
             <div className="mt-10 grid gap-8 md:grid-cols-2">
-              <form
-  action="https://formspree.io/f/xojprpej"
+   <form
+  action="https://formspree.io/f/mwvwzend"
   method="POST"
   className="space-y-4 rounded-2xl border border-white/10 bg-black/50 p-6"
 >
+  <input type="hidden" name="_subject" value="New MHZ Construction Quote Request" />
+
   <input
     type="text"
     name="name"
     placeholder="Full Name"
     required
-    className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-stone-400"
+    className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white"
   />
 
   <input
@@ -536,14 +538,14 @@ export default function Home() {
     name="email"
     placeholder="Email Address"
     required
-    className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-stone-400"
+    className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white"
   />
 
   <input
     type="tel"
     name="phone"
     placeholder="Phone Number"
-    className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-stone-400"
+    className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white"
   />
 
   <textarea
@@ -551,12 +553,12 @@ export default function Home() {
     placeholder="Tell us about your project"
     rows={5}
     required
-    className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-stone-400"
+    className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white"
   />
 
   <button
     type="submit"
-    className="w-full rounded-xl bg-[#D4AF37] px-6 py-3 font-semibold text-black transition hover:opacity-90"
+    className="w-full rounded-xl bg-[#D4AF37] px-6 py-3 font-semibold text-black"
   >
     Send Request
   </button>
