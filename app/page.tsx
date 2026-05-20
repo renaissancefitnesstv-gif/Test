@@ -153,48 +153,78 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-7xl px-4 py-12 md:px-6 md:py-16">
-          <div className="grid gap-6 md:grid-cols-3">
-            <div className="group overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.03] transition duration-300 hover:-translate-y-1 hover:border-[#D4AF37]/40 hover:shadow-[0_20px_60px_rgba(212,175,55,0.18)]">
-              <img
-                src="/Interior.png"
-                alt="Interior finishing"
-                className="h-56 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
-              />
-              <div className="p-6">
-                <div className="text-sm uppercase tracking-[0.25em] text-[#D4AF37]">
-                  Interior Finishing
-                </div>
-              </div>
-            </div>
+      <section className="mx-auto max-w-7xl px-4 py-12 md:px-6 md:py-16">
+  <div className="grid gap-6 md:grid-cols-3">
 
-            <div className="group overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.03] transition duration-300 hover:-translate-y-1 hover:border-[#D4AF37]/40 hover:shadow-[0_20px_60px_rgba(212,175,55,0.18)]">
-              <img
-                src="/service-plumbing.png"
-                alt="Plumbing systems"
-                className="h-56 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
-              />
-              <div className="p-6">
-                <div className="text-sm uppercase tracking-[0.25em] text-[#D4AF37]">
-                  Plumbing Systems
-                </div>
-              </div>
-            </div>
+    <a
+      href="/services/interior-finishing"
+      className="group overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.03] transition duration-300 hover:-translate-y-1 hover:border-[#D4AF37]/40 hover:shadow-[0_20px_60px_rgba(212,175,55,0.18)]"
+    >
+      <img
+        src="/Interior.png"
+        alt="Interior finishing"
+        className="h-56 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
+      />
 
-            <div className="group overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.03] transition duration-300 hover:-translate-y-1 hover:border-[#D4AF37]/40 hover:shadow-[0_20px_60px_rgba(212,175,55,0.18)]">
-              <img
-                src="/site.png"
-                alt="Construction site"
-                className="h-56 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
-              />
-              <div className="p-6">
-                <div className="text-sm uppercase tracking-[0.25em] text-[#D4AF37]">
-                  Site Development
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+      <div className="p-6">
+        <div className="text-sm uppercase tracking-[0.25em] text-[#D4AF37]">
+          Interior Finishing
+        </div>
+
+        <p className="mt-4 text-sm leading-7 text-stone-300">
+          Premium finishing work focused on detail, craftsmanship,
+          trim, flooring, stair systems, painting, and polished
+          final presentation.
+        </p>
+      </div>
+    </a>
+
+    <a
+      href="/services/plumbing-systems"
+      className="group overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.03] transition duration-300 hover:-translate-y-1 hover:border-[#D4AF37]/40 hover:shadow-[0_20px_60px_rgba(212,175,55,0.18)]"
+    >
+      <img
+        src="/service-plumbing.png"
+        alt="Plumbing systems"
+        className="h-56 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
+      />
+
+      <div className="p-6">
+        <div className="text-sm uppercase tracking-[0.25em] text-[#D4AF37]">
+          Plumbing Systems
+        </div>
+
+        <p className="mt-4 text-sm leading-7 text-stone-300">
+          Organized plumbing and mechanical coordination built for
+          reliability, clean routing, performance, and long-term durability.
+        </p>
+      </div>
+    </a>
+
+    <a
+      href="/services/site-development"
+      className="group overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.03] transition duration-300 hover:-translate-y-1 hover:border-[#D4AF37]/40 hover:shadow-[0_20px_60px_rgba(212,175,55,0.18)]"
+    >
+      <img
+        src="/site.png"
+        alt="Construction site"
+        className="h-56 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
+      />
+
+      <div className="p-6">
+        <div className="text-sm uppercase tracking-[0.25em] text-[#D4AF37]">
+          Site Development
+        </div>
+
+        <p className="mt-4 text-sm leading-7 text-stone-300">
+          Coordinated site execution focused on workflow, scheduling,
+          safety, organization, and professional build management.
+        </p>
+      </div>
+    </a>
+
+  </div>
+</section>
 
         <section className="mx-auto max-w-7xl px-4 py-6 md:px-6 md:py-8">
           <div className="rounded-[32px] border border-[#D4AF37]/20 bg-gradient-to-br from-white/5 via-white/[0.03] to-[#D4AF37]/5 p-6 md:p-12">
